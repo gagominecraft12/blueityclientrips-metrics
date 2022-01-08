@@ -1,0 +1,29 @@
+/** Headings */
+header,div,h1 {
+    font-family: -apple-system;
+    color: rgb(255, 255, 255);
+    background-color: rgb(31, 31, 31);
+}
+* {
+    box-sizing: border-box;
+}
+p {
+    color:rgb(255, 255, 255);
+    font-family: Verdana;
+}
+@media screen {
+    
+}
+section .content .php .nohover {
+    /* This is an anti hover for laggy pcs */
+    scrollbar-3dlight-color: rgb(255, 255, 255);
+    display:flex;
+    align-content: auto;
+    position:relative;
+    pointer-events: none;
+    cursor: none;
+    kerning: var(000);
+    text-emphasis: auto;
+    border: -2000px;
+    background-color: transparent;
+}

@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="stylesheet" href="./static/css/index.css">
+        <title>Metrics.</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <script src="main.js"></script>
+        <script src="altServer.js"></script>
+        <script src="getThemes/index.js"></script>
+        <!--[if lt IE 9]>
+            <script src="cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+        <![endif]-->
+        <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+        <script defer src="https://use.fontawesome.com/releases/v5.15.1/js/solid.js" integrity="sha384-oKbh94nlFq571cjny1jaIBlQwzTJW4KYExGYjslYSoG/J/w68zUI+KHPRveXB6EY" crossorigin="anonymous"></script>
+        <script defer src="https://use.fontawesome.com/releases/v5.15.1/js/fontawesome.js" integrity="sha384-v0OPwyxrMWxEgAVlmUqvjeEr48Eh/SOZ2DRtVYJCx1ZNDfWBfNMWUjwUwBCJgfO4" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header>
+            <div>
+                <h1>Metrics</h1>
+            </div>
+        </header>
+        <main>
+            <p>metrica</p>
+            <?php 
+            _POST["/goapi/saveWaveform"];
+            ?>
+            <section id="content" class="entity php nohover">
+               <p><bdi></bdi></p>
+            </section>
+        </main>
+        <script src="./static/js/index.js" async defer></script>
+        <script>
+            window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+            ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+        </script>
+        <script src="https://www.google-analytics.com/analytics.js" async></script>
+    </body>
+</html>
